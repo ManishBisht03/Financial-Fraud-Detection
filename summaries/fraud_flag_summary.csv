@@ -1,0 +1,4 @@
+flag_status,fraud_status,total_transactions
+Flagged,Fraudulent,16
+Not Flagged,Fraudulent,8197
+Not Flagged,Legitimate,6354407
