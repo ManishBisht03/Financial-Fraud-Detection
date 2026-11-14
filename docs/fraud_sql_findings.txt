@@ -1,0 +1,29 @@
+# Financial Fraud Detection & Transaction Risk Analytics
+## SQL Analysis Findings
+
+### 1. Project Overview
+This project analyses the PaySim synthetic mobile money transaction dataset using Python, SQLite, and SQL to identify fraud patterns and potential transaction risks.
+
+### 2. Dataset Summary
+- Total transactions analysed: 6,362,620
+- Legitimate transactions: 6,354,407
+- Fraudulent transactions: 8,213
+- Overall fraud rate: 0.1291%
+- Missing values after preparation: 0
+- Duplicate rows removed: 0
+
+### 3. Key SQL Findings
+
+**Transaction type with the highest fraud rate:** TRANSFER, at 0.7688%, based on 4,097 fraudulent transactions out of 532,909 total transactions.
+
+**Transaction type with the highest fraud count:** CASH_OUT, with 4,116 fraudulent transactions out of 2,237,500 total transactions.
+
+**Built-in fraud flag performance:** The dataset's built-in flag identified 16 fraudulent transactions out of 8,213 labelled fraud cases. The remaining 8,197 fraud cases were not flagged.
+
+**Simulation-step analysis:** Some steps showed a 100% fraud rate, but the transaction counts were very small. These results require caution and further investigation.
+
+### 4. Business Recommendations
+1. Prioritise additional review of TRANSFER transactions because they have the highest observed fraud rate in this dataset.
+2. Monitor CASH_OUT transactions because they account for the largest number of fraud cases.
+3. Evaluate the existing transaction-flagging rules because they identified only a small proportion of the labelled fraud cases.
+4. Investigate suspicious transaction patterns while considering transaction volume
