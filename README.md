@@ -43,7 +43,7 @@ The dashboard contains six analytical pages:
 ## Repository Structure
 - `scripts/` – Python scripts
 - `sql/` – SQL analysis queries
-- `data/summaries/` – Analysis summary files
+- `– summaries/` – Analysis summary CSV files
 - `docs/` – Project report and architecture diagram
 - `powerbi/` – Power BI dashboard and screenshots
 
